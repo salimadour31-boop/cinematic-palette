@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinematic Palette</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Cinematic Palette</h1>
+    <button id="langBtn">EN</button>
+  </header>
+  <main>
+    <section class="controls">
+      <label for="genre">Genre / Ambiance :</label>
+      <select id="genre">
+        <option value="random">Aléatoire</option>
+        <option value="noir">Film Noir</option>
+        <option value="scifi">Science-Fiction</option>
+        <option value="western">Western</option>
+        <option value="romance">Romance</option>
+        <option value="horror">Horreur</option>
+        <option value="fantasy">Fantasy</option>
+      </select>
+      <button id="generate">Générer</button>
+    </section>
+    <section id="palette" class="palette">
+      <!-- Swatches inserted by JS -->
+    </section>
+    <section class="actions">
+      <button id="copyCss">Copier CSS</button>
+      <button id="exportPng">Exporter PNG</button>
+    </section>
+  </main>
+  <footer>
+    <p>Open source · MIT · <a href="https://github.com/salimadour31-boop/cinematic-palette" target="_blank">GitHub</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
